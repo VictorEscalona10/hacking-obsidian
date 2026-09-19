@@ -1,0 +1,1 @@
+- `cd ~:` nos lleva a la ruta origen del usuario que somos, importante
