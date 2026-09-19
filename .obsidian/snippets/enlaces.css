@@ -1,0 +1,25 @@
+body {
+    /* Morado eléctrico intenso */
+    --link-color: #a855f7;
+
+    /* Morado neón brillante al pasar el ratón */
+    --link-color-hover: #d8b4fe;
+
+    /* Sin subrayado estático */
+    --link-decoration: none;
+
+    /* Subrayado dinámico */
+    --link-decoration-hover: underline;
+}
+
+/* Efectos de peso y resplandor para los enlaces internos */
+.markdown-rendered a.internal-link,
+.markdown-rendered a.external-link {
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.markdown-rendered a.internal-link:hover,
+.markdown-rendered a.external-link:hover {
+    text-shadow: 0 0 8px rgba(216, 180, 254, 0.6);
+}
