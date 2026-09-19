@@ -1,3 +1,14 @@
+
+## LinPEAS
+
+Para encontrar vectores automáticamente sin buscar comando por comando:
+
+```bash
+wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
+```
+
+--- 
+
 # Linux Capabilities
 
 **Linux capabilities** son un mecanismo de seguridad del kernel de Linux que divide los privilegios tradicionales del superusuario (`root`, UID 0) en unidades pequeñas, granulares e independientes.

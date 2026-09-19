@@ -27,3 +27,15 @@ La reverse shell existe principalmente para **evadir las restricciones de red pe
 
 - **El problema de la bind shell:** Si intentas conectarte directamente a la máquina objetivo, el firewall del servidor casi siempre bloqueará cualquier conexión entrante a un puerto arbitrario. Además, si la víctima está detrás de un router o NAT, ni siquiera tiene una IP pública alcanzable directamente.
 - **La ventaja de la reverse shell:** La mayoría de los cortafuegos y políticas corporativas son estrictos con el tráfico que **entra**, pero permisivos con el tráfico que **sale** (para permitir que los servidores descarguen actualizaciones o naveguen). Como la conexión sale de adentro hacia afuera, el firewall generalmente la autoriza sin sospechas.
+
+
+---
+
+## Repositorios de algunos archivos para reverse shell
+
+[revshells.com](revshells.com)
+
+### PHP
+
+`pentestmonkey: `[php-reverse-shell](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
+
