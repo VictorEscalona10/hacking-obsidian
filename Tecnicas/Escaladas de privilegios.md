@@ -51,4 +51,33 @@ sudo -u {usuario} {comando}
 find / -perm -4000 2>/dev/null
 ```
 
-Cuando ejecutamos ese comando podemos ver los binarios que tengan SUID activados y podremos ejecutar estos bianrios con el permiso del propietario, para ello hay que encontrar binarios que no sea habitual encontrarselos
+Cuando ejecutamos ese comando podemos ver los binarios que tengan SUID activados y podremos ejecutar estos binarios con el permiso del propietario, para ello hay que encontrar binarios que no sea habitual encontrarselos, para esapodemos buscar en GTFObins para ver que binarios pueden ser vulnerables
+
+---
+
+# Buscar otros usuarios para ver que procesos hay
+
+Si vemos que hay otros usuarios en la maquina, podemos buscar que procesos automaticos estan corriendo para poder ver que se ejecuta con esos usuarios, para ver que otros usuarios hay podemos ejecutar estos dos comandos:
+
+```bash
+cat /etc/passwd
+```
+
+```bash
+cd /home && ls
+```
+
+luego de ver si hay otros usuarios podemos utilizar este comando:
+
+```bash
+ps aux | grep {user}
+```
+
+---
+
+# Port Forwarding
+
+```bash
+ss -tuln
+```
+
