@@ -81,3 +81,20 @@ ps aux | grep {user}
 ss -tuln
 ```
 
+
+---
+
+# Systemd
+
+si no vemos nada podemos ver las tareas automaticas que corren en el servidor, para ellos podemos utilizar el siguiente comando
+
+```bash
+systemctl list-timer
+```
+
+eso va a listar las tareas automaticas del sistema y ver que cosas raras pueden estar pasando alli para poder vulnerarlas, podemos ver que hacer o donde esta su archivo utilizando el siguiente comando
+
+```bash
+systemctl status {servicio}
+```
+
