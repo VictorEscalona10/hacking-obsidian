@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "01_Comandos_y_Herramientas/Linux comandos.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -190,14 +190,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7b01634d09f091fa",
+  "active": "8c69c2c959efcd6c",
   "lastOpenFiles": [
+    "06_Tecnologias/FTP - SFTP.md",
+    "06_Tecnologias/SSH.md",
+    "01_Comandos_y_Herramientas/Nmap.md",
+    "01_Comandos_y_Herramientas/Linux comandos.md",
     "06_Tecnologias",
     "01_Comandos_y_Herramientas/FFUF.md",
     "01_Comandos_y_Herramientas/Actualizar shell.md",
-    "01_Comandos_y_Herramientas/Linux comandos.md",
     "01_Comandos_y_Herramientas/Shell comandos.md",
-    "01_Comandos_y_Herramientas/Nmap.md",
     "03_Writeups_Maquinas/Nexus machine.md",
     "03_Writeups_Maquinas/Cap machine.md",
     "02_Vulnerabilidades/IDOR.md",
