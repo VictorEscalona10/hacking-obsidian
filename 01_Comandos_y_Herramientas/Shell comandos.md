@@ -1,0 +1,4 @@
+- `ctrl + mayus + T:` Abrir nueva pestaña
+- `ctrl + mayus + r:` abrir otra terminal vertical
+- `ctrl + mayus + d:` abrir otra terminal abajo
+- `alt + derecha / izquierda:` moverse entre las terminales de una misma pestaña

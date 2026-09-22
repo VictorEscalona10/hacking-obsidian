@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Cap machine.md",
+                "file": "01_Comandos_y_Herramientas/Shell comandos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cap machine"
+              "title": "Shell comandos"
             }
           }
         ]
@@ -192,8 +192,9 @@
   },
   "active": "8c69c2c959efcd6c",
   "lastOpenFiles": [
-    "02_Vulnerabilidades/IDOR.md",
     "03_Writeups_Maquinas/Cap machine.md",
+    "01_Comandos_y_Herramientas/Shell comandos.md",
+    "02_Vulnerabilidades/IDOR.md",
     "02_Vulnerabilidades/RCE.md",
     "01_Comandos_y_Herramientas/Linux comandos.md",
     "01_Comandos_y_Herramientas/FFUF.md",
