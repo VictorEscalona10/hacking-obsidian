@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Nexus machine.md",
+                "file": "03_Writeups_Maquinas/Cap machine.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nexus machine"
+              "title": "Cap machine"
             }
           }
         ]
@@ -190,18 +190,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7b01634d09f091fa",
+  "active": "8c69c2c959efcd6c",
   "lastOpenFiles": [
-    "02_Vulnerabilidades/RCE.md",
     "02_Vulnerabilidades/IDOR.md",
-    "01_Comandos_y_Herramientas/Nmap.md",
+    "03_Writeups_Maquinas/Cap machine.md",
+    "02_Vulnerabilidades/RCE.md",
     "01_Comandos_y_Herramientas/Linux comandos.md",
     "01_Comandos_y_Herramientas/FFUF.md",
+    "03_Writeups_Maquinas/Nexus machine.md",
+    "01_Comandos_y_Herramientas/Nmap.md",
     "01_Comandos_y_Herramientas/Actualizar shell.md",
     "Tecnicas/Escaladas de privilegios.md",
-    "03_Writeups_Maquinas/Nexus machine.md",
     "Tecnicas/Reverse Shell.md",
-    "03_Writeups_Maquinas/Cap machine.md",
     "Plantillas/Vulnerabilities Template.md",
     "Recursos/Sin título.md",
     "Recursos",
