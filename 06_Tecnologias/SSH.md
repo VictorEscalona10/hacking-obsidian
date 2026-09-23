@@ -7,3 +7,7 @@ necesitas un nombre de usuario, la ip de la maquina y la contraseña de ese usua
 ```bash
 ssh {usuario}@{IP}
 ```
+
+## Comando de SSH
+
+los comando de ssh son justamente los mismos de la maquina a la qu enos conectamos, ya que justamente SSH es un protocolo para conectarnos remotamente a la consola de la maquina.
