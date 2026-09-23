@@ -2,3 +2,11 @@ FTP (File Transfer Protocol) es el estándar clásico diseñado específicamente
 
 ## Como conectarse por FTP
 
+Debemos conocer la ip de la maquina a la que queremos conectarnos
+
+```bash
+ftp {IP}
+```
+
+Nos pedira un usuario y una contraseña, **Siempre hay que probar** si colocamos como usuario `anonymous` y de contraseña lo dejamos vacio solo presionamos `ENTER` a ver que sucede
+
