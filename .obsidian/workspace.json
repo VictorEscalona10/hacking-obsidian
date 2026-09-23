@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Cap machine.md",
+                "file": "06_Tecnologias/SMB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cap machine"
+              "title": "SMB"
             }
           }
         ]
@@ -192,6 +192,10 @@
   },
   "active": "8c69c2c959efcd6c",
   "lastOpenFiles": [
+    "03_Writeups_Maquinas/Dancing.md",
+    "06_Tecnologias/SMB.md",
+    "05_Tecnicas/Reverse Shell.md",
+    "03_Writeups_Maquinas/Cap machine.md",
     "06_Tecnologias/FTP - SFTP.md",
     "01_Comandos_y_Herramientas/Linux comandos.md",
     "06_Tecnologias/SSH.md",
@@ -201,11 +205,9 @@
     "01_Comandos_y_Herramientas/Actualizar shell.md",
     "01_Comandos_y_Herramientas/Shell comandos.md",
     "03_Writeups_Maquinas/Nexus machine.md",
-    "03_Writeups_Maquinas/Cap machine.md",
     "02_Vulnerabilidades/IDOR.md",
     "02_Vulnerabilidades/RCE.md",
     "05_Tecnicas/Escaladas de privilegios.md",
-    "05_Tecnicas/Reverse Shell.md",
     "Plantillas/Vulnerabilities Template.md",
     "Recursos/Sin título.md",
     "Recursos",
