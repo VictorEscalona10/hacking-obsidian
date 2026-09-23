@@ -18,21 +18,13 @@ status: Completada
 
 ## 1. Information Gathering (Reconocimiento)
 
-### Escaneo de Puertos
+### Escaneo de Puertos con [[Nmap]]
 ```bash
 
 ```
 
 **Puertos Abiertos:**
 - 135, 139, 445, 5985, 47001, 49664, 49665, 49666, 49667, 49668, 49669
-
-### Enumeración de Servicios / Fuzzing
-```bash
-
-```
-
-**Descubrimientos clave:**
-- 
 
 ---
 

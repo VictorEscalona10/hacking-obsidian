@@ -13,7 +13,7 @@ Aquí tienes el desglose exacto de lo que hace cada parte del comando:
 
 ### ¿Por qué se utiliza?
 
-Cuando un auditor de seguridad o administrador obtiene acceso remoto a una máquina (por ejemplo, a través de una _Reverse Shell_ usando `netcat`), la terminal que recibe suele ser muy limitada. Estas "dumb shells" tienen varios problemas:
+Cuando un auditor de seguridad o administrador obtiene acceso remoto a una máquina (por ejemplo, a través de una [[Reverse Shell]] usando `netcat`), la terminal que recibe suele ser muy limitada. Estas "dumb shells" tienen varios problemas:
 
 1. **No hay control de trabajos:** Si presionas `Ctrl + C` para detener un proceso (como un `ping`), se cierra toda la conexión y pierdes el acceso.
     

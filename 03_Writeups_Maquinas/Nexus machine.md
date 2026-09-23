@@ -18,13 +18,13 @@ status: ""
 
 ## 1. Information Gathering (Reconocimiento)
 
-### Escaneo de Puertos
+### Escaneo de Puertos con [[Nmap]]
 ```bash
 sudo nmap -p- --open -sS --min-rate 5000 -vvv [IP] -n -Pn -oN escaneo
 ```
 
 **Puertos Abiertos:**
-- 22, 80
+- 22 ([[SSH]]), 80 (HTTP)
 
 ### Enumeración de Servicios / Fuzzing
 
@@ -49,13 +49,13 @@ ffuf -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -u htt
 
 ### Metodología
 1. utilizar la vulnerabilidad CVE-2026-38526 para intentar hacer un [[RCE]]
-2. intentar subir un archivo al servidor que me de la reverse shell y utilizar netcat para escuchar por el puerto 
+2. intentar subir un archivo al servidor que me de la [[Reverse Shell]] y utilizar netcat para escuchar por el puerto 
 3.  interceptamos la subida del archivo por la parte de email con burp suite y le cambiamos la extension png a php y vamos a la url vulnerable segun el CVE para ejecutar el reverse shell
-4. Despues de ejecutar la reverse shell, nos da una consola y tenemos que movernos entre los usuarios para sacar las credenciales de jones, al final se encuentra un .env con la contraseña y probamos por ssh
+4. Despues de ejecutar la reverse shell, nos da una consola y tenemos que movernos entre los usuarios para sacar las credenciales de jones, al final se encuentra un .env con la contraseña y probamos por [[SSH]]
 
 ### Ejecución
 ```bash
-jones@10.129.113.87 passwd:y27xb3ha!!74GbR
+ssh jones@10.129.113.87 # passwd: y27xb3ha!!74GbR
 ```
 
 **Prueba de acceso (User Flag):**

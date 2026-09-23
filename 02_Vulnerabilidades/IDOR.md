@@ -39,7 +39,7 @@ Un IDOR es una falla de control de acceso que ocurre cuando un sistema muestra d
 *¿Qué puede lograr un atacante si explota esto exitosamente?*
 - **Confidencialidad:** Robo de historias médicas, facturas o datos de clientes
 - **Integridad:** Modificación o eliminación de registros ajenos
-- **Disponibilidad:** En caso de un RCE, caída total del servicio
+- **Disponibilidad:** En caso de un [[RCE]], caída total del servicio
 
 ---
 
@@ -47,3 +47,4 @@ Un IDOR es una falla de control de acceso que ocurre cuando un sistema muestra d
 *Medidas defensivas y buenas prácticas de desarrollo.*
 - **Validación del lado del servidor:** Comprobar siempre que el usuario en sesión es el dueño legítimo del recurso
 - **Diseño seguro:** Usar identificadores únicos universales (UUID) que sean imposibles de adivinar en lugar de números secuenciales
+

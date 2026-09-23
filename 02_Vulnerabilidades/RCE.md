@@ -32,7 +32,7 @@ Consiste en un fallo en el diseño o implementación de una aplicación o servic
 - **Subida de archivos sin validar (*Unrestricted File Upload*):** Subir un archivo con código ejecutable (como `.php`, `.jsp`, `.aspx`) al servidor web y solicitar su URL en el navegador para que el servidor lo interprete.
 - **Deserialización insegura:** Procesar objetos serializados manipulados por el atacante (muy común en Java, Python o PHP), lo que altera el flujo del programa al reconstruir el objeto y fuerza la ejecución de código.
 - **Desbordamiento de búfer (*Buffer Overflow*):** En programas escritos en lenguajes de bajo nivel como C o C++, escribir más datos de los que caben en la memoria para sobreescribir punteros de instrucción (como el registro `RIP`/`EIP`) y redirigir la ejecución hacia un *shellcode*.
-- **Fallos en bibliotecas o servicios desactualizados:** Vulnerabilidades públicas conocidas (como la famosa falla *Log4Shell* en Log4j o vulnerabilidades en versiones viejas de servidores como Apache o SMB).
+- **Fallos en bibliotecas o servicios desactualizados:** Vulnerabilidades públicas conocidas (como la famosa falla *Log4Shell* en Log4j o vulnerabilidades en versiones viejas de servidores como Apache o [[SMB]]).
 
 ---
 
@@ -45,7 +45,7 @@ En la escala CVSS, los RCE casi siempre obtienen una puntuación de **9.0 a 10.0
 - **Disponibilidad:** Puede tumbar servicios, cifrar la máquina con ransomware o consumir todos los recursos de hardware.
 
 > [!NOTE]
-> Una vez que consigues RCE, el siguiente paso natural en una auditoría o ataque suele ser pivotar hacia la escalada de privilegios o **desplegar una reverse shell** para interactuar cómodamente con el sistema operativo en tiempo real.
+> Una vez que consigues RCE, el siguiente paso natural en una auditoría o ataque suele ser pivotar hacia la [[Escaladas de privilegios|escalada de privilegios]] o **desplegar una [[Reverse Shell]]** para interactuar cómodamente con el sistema operativo en tiempo real.
 
 ---
 
@@ -56,9 +56,3 @@ En la escala CVSS, los RCE casi siempre obtienen una puntuación de **9.0 a 10.0
 - **Control estricto de subida de archivos:** Validar extensiones, tipos MIME y contenido; almacenar archivos fuera de la raíz web y sin permisos de ejecución.
 - **Principio de mínimo privilegio:** Ejecutar las aplicaciones y servicios con cuentas de usuario que tengan los menores privilegios posibles para mitigar el impacto.
 - **Gestión de dependencias y parches:** Mantener bibliotecas, servidores y sistemas actualizados frente a vulnerabilidades conocidas.
-
----
-
-## Referencias de Estudio
-- [OWASP - Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
-- [MITRE ATT&CK - Command and Scripting Interpreter (T1059)](https://attack.mitre.org/techniques/T1059/)

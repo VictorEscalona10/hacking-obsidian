@@ -17,7 +17,7 @@ Su objetivo es cumplir con el **principio de mínimo privilegio**: en lugar de d
 
 ## Python Capability (`cap_setuid`)
 
-Si se muestra esto en la búsqueda de capabilities con python, sabes que puede ser vulnerable al cambiar el ID:
+Si se muestra esto en la búsqueda de capabilities con python, sabes que puede ser vulnerable al cambiar el ID (ver caso práctico en [[Cap machine]]):
 
 ```bash
 usr/bin/python3.8 = cap_setuid,cap_net_bind_service+eip
@@ -76,6 +76,8 @@ ps aux | grep {user}
 ---
 
 # Port Forwarding
+
+Permite redirigir puertos internos para acceder a servicios locales no expuestos al exterior
 
 ```bash
 ss -tuln

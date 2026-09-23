@@ -19,13 +19,13 @@ status: Completada
 
 ## 1. Information Gathering (Reconocimiento)
 
-### Escaneo de Puertos
+### Escaneo de Puertos con [[Nmap]]
 ```bash
 sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.234.54 -n -Pn -oG escaneo
 ```
 
 **Puertos Abiertos:**
-- 21,22, 80
+- 21 ([[FTP - SFTP|FTP]]), 22 ([[SSH]]), 80 (HTTP)
 
 ### Enumeración de Servicios / Fuzzing
 ```bash
@@ -33,22 +33,22 @@ sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.234.54 -n -Pn -oG escaneo
 ```
 
 **Descubrimientos clave:**
-- 
+- un link que nos lleva a informacion de usuarios que podemos prestarle atencion
 
 ---
 
 ## 2. Vulnerability Assessment (Análisis de Vulnerabilidades)
--  [[IDOR]]
--  No hubo cifrado de datos ya que se paso por el protocolo TCP
+- [[IDOR]]
+- No hubo cifrado de datos ya que las credenciales pasaron en texto claro por el protocolo [[FTP - SFTP|FTP]].
 
 ---
 
 ## 3. Exploitation (Acceso Inicial)
-
 ### Metodología
-1.  Cambiar el Id de la url de la pagina de usuario
-2. descargar el archivo pcap
-3.  revisar el archivo.pcap para ver el trafico
+1. Cambiar el Id de la url de la pagina de usuario ([[IDOR]]).
+2. Descargar el archivo `.pcap`.
+3. Revisar el archivo `.pcap` en Wireshark/tshark para capturar credenciales de [[FTP - SFTP|FTP]].
+4. Conectarse a través de [[SSH]] con el usuario `nathan`.
 
 ### Ejecución
 ```bash
