@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Redeemer.md",
+                "file": "01_Comandos_y_Herramientas/FFUF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Redeemer"
+              "title": "FFUF"
             }
           }
         ]
@@ -193,10 +193,10 @@
   "active": "75c5a8621dfd91ac",
   "lastOpenFiles": [
     "03_Writeups_Maquinas/Redeemer.md",
+    "revshells.com.md",
     "03_Writeups_Maquinas/Cap machine.md",
     "03_Writeups_Maquinas/Nexus machine.md",
     "05_Tecnicas/Reverse Shell.md",
-    "revshells.com.md",
     "05_Tecnicas/Escaladas de privilegios.md",
     "06_Tecnologias/FTP - SFTP.md",
     "06_Tecnologias/SMB.md",
