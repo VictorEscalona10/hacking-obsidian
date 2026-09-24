@@ -16,19 +16,8 @@
               "icon": "lucide-git-fork",
               "title": "Vista gráfica"
             }
-          },
-          {
-            "id": "c416ee5a8e665c89",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nueva pestaña"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -197,7 +186,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c416ee5a8e665c89",
+  "active": "75c5a8621dfd91ac",
   "lastOpenFiles": [
     "03_Writeups_Maquinas/Cap machine.md",
     "03_Writeups_Maquinas/Nexus machine.md",
