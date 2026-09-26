@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05_Tecnicas/Escaladas de privilegios.md",
+                "file": "03_Writeups_Maquinas/Reactor.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Escaladas de privilegios"
+              "title": "Reactor"
             }
           }
         ]
@@ -192,8 +192,8 @@
   },
   "active": "75c5a8621dfd91ac",
   "lastOpenFiles": [
-    "03_Writeups_Maquinas/Cap machine.md",
     "05_Tecnicas/Escaladas de privilegios.md",
+    "03_Writeups_Maquinas/Cap machine.md",
     "03_Writeups_Maquinas/Reactor.md",
     "06_Tecnologias/MD5.md",
     "06_Tecnologias/SQLITE 3.md",
