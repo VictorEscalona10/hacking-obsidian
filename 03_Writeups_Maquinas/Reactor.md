@@ -32,7 +32,7 @@ status: ""
 ```
 
 **Descubrimientos clave:**
-- Ningunoi
+- Ninguno
 
 ---
 
