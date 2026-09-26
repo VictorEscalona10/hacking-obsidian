@@ -8,7 +8,7 @@ tags:
   - RCE
   - NextJS
   - MD5
-status: ""
+status: Completada
 ---
 
 # Resumen Ejecutivo
@@ -38,7 +38,7 @@ sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.245.214 -n -Pn -oN escaneo
 ---
 
 ## 2. Vulnerability Assessment (Análisis de Vulnerabilidades)
-- Buscamos la version de [[NEXT JS|Next]] en la que esta creada la aplicación (15.0.3)
+- Buscamos la version de [[NextJS|Next]] en la que esta creada la aplicación (15.0.3)
 - Encontramos el CVE-2025-66478 para ejecutar un [[RCE]]
 
 ---

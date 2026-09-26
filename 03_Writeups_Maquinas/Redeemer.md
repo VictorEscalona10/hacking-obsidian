@@ -6,7 +6,7 @@ difficulty: Very Easy
 os: Linux
 tags:
   - Redis
-status: ""
+status: Completada
 ---
 
 # Resumen Ejecutivo
