@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Vulnerabilidades/RCE.md",
+                "file": "01_Comandos_y_Herramientas/FFUF.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RCE"
+              "title": "FFUF"
             }
           }
         ]
@@ -192,6 +192,8 @@
   },
   "active": "75c5a8621dfd91ac",
   "lastOpenFiles": [
+    "03_Writeups_Maquinas/Room 404.md",
+    "02_Vulnerabilidades/RCE.md",
     "02_Vulnerabilidades/IDOR.md",
     "05_Tecnicas/Reverse Shell.md",
     "03_Writeups_Maquinas/Orion.md",
@@ -212,7 +214,6 @@
     "01_Comandos_y_Herramientas/Shell comandos.md",
     "01_Comandos_y_Herramientas/Nmap.md",
     "01_Comandos_y_Herramientas/Actualizar shell.md",
-    "02_Vulnerabilidades/RCE.md",
     "01_Comandos_y_Herramientas/Linux comandos.md",
     "06_Tecnologias",
     "Plantillas/Vulnerabilities Template.md",
@@ -221,7 +222,6 @@
     "Pasted image 20260919121139.png",
     "Plantillas/OSCP_Writeup_Template.md",
     "05_Tecnicas",
-    "2026-09-03.md",
     "Pasted image 20260916213200.png",
     "Plantillas",
     "04_Certificaciones",
