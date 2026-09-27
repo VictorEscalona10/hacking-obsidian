@@ -2,11 +2,11 @@
 title: Try hack me- Room 404
 date: YYYY-MM-DD
 platform: Try Hack Me
-difficulty: ""
-os: ""
+difficulty: Very Easy
+os: Linux
 tags:
-  - 
-status: ""
+  - Git
+status: Completada
 ---
 
 # Resumen Ejecutivo
@@ -19,7 +19,7 @@ status: ""
 
 ### Escaneo de Puertos
 ```bash
-
+sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.234.54 -n -Pn -oG escaneo
 ```
 
 **Puertos Abiertos:**
@@ -31,12 +31,12 @@ status: ""
 ```
 
 **Descubrimientos clave:**
-- 
+- hay una ruta /.git oculta 
 
 ---
 
 ## 2. Vulnerability Assessment (Análisis de Vulnerabilidades)
-- 
+- Podemos utilizar herramientas como git-dumper para ver la estructura de la pagina que esta en git
 - 
 
 ---
@@ -44,51 +44,18 @@ status: ""
 ## 3. Exploitation (Acceso Inicial)
 
 ### Metodología
-1. 
-2. 
-3. 
+1. utilizamos la herramienta git-dumper 
+2. nos metemos en los archivos y revisamos cada uno
+3. Buscamos algun dato o brecha que nos sirva
 
 ### Ejecución
 ```bash
-
+git-dumper http://10.64.170.29:8080/.git/ . 
 ```
 
 **Prueba de acceso (User Flag):**
 ```bash
-
+THM{byt3_l0tus_n3v3r_f0rg3ts}
 ```
 
 ---
-
-## 4. Privilege Escalation (Escalada de Privilegios)
-
-### Enumeración Interna
-- 
-
-### Explotación Local
-1. 
-2. 
-3. 
-
-### Ejecución
-```bash
-
-```
-
-**Prueba de acceso (Root/SYSTEM Flag):**
-```bash
-
-```
-
----
-
-## 5. Post-Exploitation & Clean Up
-- [ ] 
-- [ ] 
-- [ ] 
-
----
-
-## Remediation (Mitigaciones)
-- **Acceso inicial:** 
-- **Escalada:**
