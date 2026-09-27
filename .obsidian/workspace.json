@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Comandos_y_Herramientas/FFUF.md",
+                "file": "03_Writeups_Maquinas/Room 404.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FFUF"
+              "title": "Room 404"
             }
           }
         ]
@@ -192,6 +192,8 @@
   },
   "active": "75c5a8621dfd91ac",
   "lastOpenFiles": [
+    "01_Comandos_y_Herramientas/git-dumper.md",
+    "01_Comandos_y_Herramientas/FFUF.md",
     "03_Writeups_Maquinas/Room 404.md",
     "02_Vulnerabilidades/RCE.md",
     "02_Vulnerabilidades/IDOR.md",
@@ -209,7 +211,6 @@
     "06_Tecnologias/SSH.md",
     "06_Tecnologias/MD5.md",
     "06_Tecnologias/NextJS.md",
-    "01_Comandos_y_Herramientas/FFUF.md",
     "revshells.com.md",
     "01_Comandos_y_Herramientas/Shell comandos.md",
     "01_Comandos_y_Herramientas/Nmap.md",
@@ -220,7 +221,6 @@
     "Recursos/Sin título.md",
     "Recursos",
     "Pasted image 20260919121139.png",
-    "Plantillas/OSCP_Writeup_Template.md",
     "05_Tecnicas",
     "Pasted image 20260916213200.png",
     "Plantillas",

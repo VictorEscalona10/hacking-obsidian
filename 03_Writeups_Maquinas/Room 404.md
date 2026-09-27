@@ -1,7 +1,7 @@
 ---
 title: Try hack me- Room 404
 date: YYYY-MM-DD
-platform: ""
+platform: Try Hack Me
 difficulty: ""
 os: ""
 tags:
