@@ -1,9 +1,9 @@
 ---
 title: Try hack me- Bech bar
 date: YYYY-MM-DD
-platform: ""
-difficulty: ""
-os: ""
+platform: Try Hack Me
+difficulty: Easy
+os: Linux
 tags:
   - YAML
 status: ""
