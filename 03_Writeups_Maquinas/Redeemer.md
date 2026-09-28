@@ -17,7 +17,7 @@ status: Completada
 
 ## 1. Information Gathering (Reconocimiento)
 
-### Escaneo de Puertos
+### Escaneo de Puertos con [[Nmap]]
 ```bash
 sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.234.51 -n -Pn -oG escaneo   
 ```

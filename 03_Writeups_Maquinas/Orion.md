@@ -23,7 +23,7 @@ status: ""
 ```
 
 **Puertos Abiertos:**
-- 22 (SSH), 80 (HHTP)
+- 22 ([[SSH]]), 80 (HHTP)
 
 ### Enumeración de Servicios / Fuzzing
 ```bash
@@ -60,7 +60,7 @@ status: ""
 
 ---
 
-## 4. Privilege Escalation (Escalada de Privilegios)
+## 4. Privilege Escalation ([[Escaladas de privilegios]])
 
 ### Enumeración Interna
 - 

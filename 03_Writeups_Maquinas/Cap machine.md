@@ -62,7 +62,7 @@ ssh nathan@10.129.234.54
 
 ---
 
-## 4. Privilege Escalation (Escalada de Privilegios)
+## 4. Privilege Escalation ([[Escaladas de privilegios]])
 
 ### Enumeración Interna
 - [[Escaladas de privilegios#Linux Capabilities|Linux Capabilities Python]]

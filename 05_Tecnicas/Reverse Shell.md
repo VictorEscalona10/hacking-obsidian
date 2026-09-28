@@ -43,6 +43,7 @@ La reverse shell existe principalmente para **evadir las restricciones de red pe
 
 ## Conexiones y Siguientes Pasos
 - [[RCE]] - Vector habitual para conseguir ejecutar el comando que lanza la reverse shell.
+- [[YAML]] - Ejemplo de inyección YAML que devuelve una reverse shell al parsear con `yaml.load()`.
 - [[Actualizar shell]] - Paso fundamental para estabilizar la shell (TTY completa) una vez recibida la conexión.
 - [[Escaladas de privilegios]] - Fase posterior de enumeración y elevación de privilegios en el sistema.
 

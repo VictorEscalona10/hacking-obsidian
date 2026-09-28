@@ -17,7 +17,7 @@ status: Completada
 
 ## 1. Information Gathering (Reconocimiento)
 
-### Escaneo de Puertos
+### Escaneo de Puertos con [[Nmap]]
 ```bash
 sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.234.54 -n -Pn -oG escaneo
 ```
@@ -36,7 +36,7 @@ sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.234.54 -n -Pn -oG escaneo
 ---
 
 ## 2. Vulnerability Assessment (Análisis de Vulnerabilidades)
-- Podemos utilizar herramientas como git-dumper para ver la estructura de la pagina que esta en git
+- Podemos utilizar herramientas como [[git-dumper]] para ver la estructura de la pagina que esta en git
 - 
 
 ---
@@ -44,7 +44,7 @@ sudo nmap -p- --open -sS --min-rate 5000 -vvv 10.129.234.54 -n -Pn -oG escaneo
 ## 3. Exploitation (Acceso Inicial)
 
 ### Metodología
-1. utilizamos la herramienta git-dumper 
+1. utilizamos la herramienta [[git-dumper]] 
 2. nos metemos en los archivos y revisamos cada uno
 3. Buscamos algun dato o brecha que nos sirva
 
