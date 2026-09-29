@@ -1,13 +1,3 @@
----
-title: YAML
-tags:
-  - tecnologia
-  - vulnerabilidad
-aliases:
-  - YML
-  - Inyección YAML
-  - Deserialización YAML
----
 
 YAML (*YAML Ain't Markup Language*) es un formato de **serialización de datos** en texto plano, legible por humanos. Se usa muchísimo para configuraciones (`docker-compose.yml`, Kubernetes, CI/CD, Ansible) y para **transportar objetos** entre sistemas (APIs, pipelines, herramientas de datos).
 

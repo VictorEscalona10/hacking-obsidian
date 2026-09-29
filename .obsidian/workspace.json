@@ -11,10 +11,14 @@
             "id": "53a3ab963d6f54b5",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "06_Tecnologias/MD5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MD5"
             }
           }
         ]
@@ -188,6 +192,7 @@
   },
   "active": "53a3ab963d6f54b5",
   "lastOpenFiles": [
+    "06_Tecnologias/YAML.md",
     "Dashboard.md",
     "01_Comandos_y_Herramientas/FFUF.md",
     "05_Tecnicas/Escaladas de privilegios.md",
@@ -201,7 +206,6 @@
     "03_Writeups_Maquinas/Redeemer.md",
     "03_Writeups_Maquinas/Reactor.md",
     "06_Tecnologias/NextJS.md",
-    "06_Tecnologias/YAML.md",
     "06_Tecnologias/SQLITE 3.md",
     "06_Tecnologias/SSH.md",
     "01_Comandos_y_Herramientas/git-dumper.md",
