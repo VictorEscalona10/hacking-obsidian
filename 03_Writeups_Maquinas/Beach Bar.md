@@ -6,7 +6,7 @@ difficulty: Easy
 os: Linux
 tags:
   - YAML
-status: ""
+status: Completada
 ---
 
 # Resumen Ejecutivo
@@ -64,29 +64,18 @@ THM{y4ml_pl4yl1st_pwns_th3_b34ch
 - 
 
 ### Explotación Local
-1. 
-2. 
+1. Utilizamos el comando para buscar procesos en segundo plano de usuarios nos encontramos con una linea que revebala la contrase;a de root
+2. [[Escaladas de privilegios#Buscar otros usuarios para ver que procesos hay|procesos]]
 3. 
 
 ### Ejecución
 ```bash
-
+ps aux | grep jukebox
 ```
 
 **Prueba de acceso (Root/SYSTEM Flag):**
 ```bash
-
+THM{cr3d3nt14l_r3us3_4t_th3_b34ch_b4r}
 ```
 
 ---
-
-## 5. Post-Exploitation & Clean Up
-- [ ] 
-- [ ] 
-- [ ] 
-
----
-
-## Remediation (Mitigaciones)
-- **Acceso inicial:** No exponer credenciales hardcodeadas; usar `yaml.safe_load()` en lugar de `yaml.load()` para parsear la entrada del usuario.
-- **Escalada:**

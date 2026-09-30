@@ -1,5 +1,7 @@
 script /dev/null -c /bin/bash
 
+python3 -c 'import pyt; pyt("/bin/bash")'
+
 El comando `script /dev/null -c /bin/bash` es una técnica muy conocida en sistemas Linux, especialmente en el ámbito de la ciberseguridad y el _pentesting_ (pruebas de penetración). Se utiliza principalmente para **"actualizar" una shell básica (dumb shell) a una terminal completamente interactiva (TTY)**.
 
 Aquí tienes el desglose exacto de lo que hace cada parte del comando:
