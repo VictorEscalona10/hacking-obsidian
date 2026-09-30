@@ -68,7 +68,7 @@ c22002fee26e397a94ead78fb8587957
 ## 4. Privilege Escalation ([[Escaladas de privilegios]])
 
 ### Enumeración Interna
-- vemos los [[Escaladas de privilegios#Buscar otros usuarios para ver que procesos hay|procesos]] en segundo pplano de cada uno de los usuarios y nos damos cuenta que hay un proceso de node con `--inspect=127.0.0.1:9229` Esto activa el **inspector de Node.js**, una herramienta de depuración que permite conectarse y ejecutar código JavaScript en ese proceso.
+- vemos los [[Escaladas de privilegios#Buscar otros usuarios para ver que procesos hay|procesos]] en segundo plano de cada uno de los usuarios y nos damos cuenta que hay un proceso de node con `--inspect=127.0.0.1:9229` Esto activa el **inspector de Node.js**, una herramienta de depuración que permite conectarse y ejecutar código JavaScript en ese proceso.
 
 ### Explotación Local
 1.  utilizamos este comando: `node inspect 127.0.0.1:9229` para conectarnos a esa shell
