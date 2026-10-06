@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Beach Bar.md",
+                "file": "06_Tecnologias/YAML.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Beach Bar"
+              "title": "YAML"
             }
           },
           {
@@ -206,10 +206,10 @@
   },
   "active": "53a3ab963d6f54b5",
   "lastOpenFiles": [
+    "03_Writeups_Maquinas/Beach Bar.md",
     "05_Tecnicas/Escaladas de privilegios.md",
     "03_Writeups_Maquinas/Reactor.md",
     "03_Writeups_Maquinas/Room 404.md",
-    "03_Writeups_Maquinas/Beach Bar.md",
     "03_Writeups_Maquinas/Cap machine.md",
     "03_Writeups_Maquinas/Redeemer.md",
     "01_Comandos_y_Herramientas/Actualizar shell.md",
