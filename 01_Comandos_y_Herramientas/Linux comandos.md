@@ -1,1 +1,2 @@
 - `cd ~:` nos lleva a la ruta origen del usuario que somos, importante
+- `xclip -sel clip < archivo.txt:` copiar el contenido de un archivo (debemos tener xclip instalado)
