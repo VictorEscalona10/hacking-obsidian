@@ -31,13 +31,13 @@ status: ""
 ```
 
 **Descubrimientos clave:**
-- 
+- no encontre nada interesante, todo redirige a la pagina principal
 
 ---
 
 ## 2. Vulnerability Assessment (Análisis de Vulnerabilidades)
-- 
-- 
+- Al interceptar la peticion de portal.html, nos damos cuenta que hace una peticion a /api/validate para validar el archivo csv o el archvo que se le pase
+- podemos modificar la url para acceder al v
 
 ---
 
