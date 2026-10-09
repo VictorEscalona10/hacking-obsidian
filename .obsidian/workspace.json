@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Vulnerabilidades/SSRF.md",
+                "file": "06_Tecnologias/NGINX.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SSRF"
+              "title": "NGINX"
             }
           }
         ]
@@ -192,6 +192,9 @@
   },
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
+    "03_Writeups_Maquinas/Cohort.md",
+    "03_Writeups_Maquinas/Cap machine.md",
+    "02_Vulnerabilidades/SSRF.md",
     "02_Vulnerabilidades/RCE.md",
     "02_Vulnerabilidades/IDOR.md",
     "06_Tecnologias/MARIMO.md",
@@ -200,19 +203,16 @@
     "06_Tecnologias/SQLITE 3.md",
     "06_Tecnologias/SSH.md",
     "06_Tecnologias/VHOST.md",
-    "03_Writeups_Maquinas/Cohort.md",
     "01_Comandos_y_Herramientas/Linux comandos.md",
     "01_Comandos_y_Herramientas/curl - get.md",
     "01_Comandos_y_Herramientas/FFUF.md",
     "01_Comandos_y_Herramientas/Actualizar shell.md",
-    "02_Vulnerabilidades/SSRF.md",
     "03_Writeups_Maquinas/Room 404.md",
     "05_Tecnicas/Escaladas de privilegios.md",
     "01_Comandos_y_Herramientas/git-dumper.md",
     "06_Tecnologias/YAML.md",
     "03_Writeups_Maquinas/Beach Bar.md",
     "03_Writeups_Maquinas/Reactor.md",
-    "03_Writeups_Maquinas/Cap machine.md",
     "03_Writeups_Maquinas/Redeemer.md",
     "Dashboard.md",
     "06_Tecnologias/MD5.md",
