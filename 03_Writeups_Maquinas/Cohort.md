@@ -37,7 +37,8 @@ status: ""
 
 ## 2. Vulnerability Assessment (Análisis de Vulnerabilidades)
 - Al interceptar la peticion de portal.html, nos damos cuenta que hace una peticion a /api/validate para validar el archivo csv o el archvo que se le pase
-- podemos modificar la url para acceder al v
+- podemos modificar la url para acceder a nginx con esto http://0:8888
+- vemos que nos devuelve un vhost, lo agregamos a /etc/hosts y lo colocamos en la url, nos saldra una web de marimo
 
 ---
 

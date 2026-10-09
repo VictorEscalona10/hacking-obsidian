@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Cohort.md",
+                "file": "06_Tecnologias/MARIMO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cohort"
+              "title": "MARIMO"
             }
           }
         ]
@@ -192,8 +192,9 @@
   },
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
-    "06_Tecnologias/NGINX.md",
     "03_Writeups_Maquinas/Cohort.md",
+    "06_Tecnologias/MARIMO.md",
+    "06_Tecnologias/NGINX.md",
     "02_Vulnerabilidades/SSRF.md",
     "06_Tecnologias/VHOST.md",
     "02_Vulnerabilidades/IDOR.md",
@@ -217,7 +218,6 @@
     "03_Writeups_Maquinas/Dancing.md",
     "06_Tecnologias/FTP - SFTP.md",
     "06_Tecnologias/NextJS.md",
-    "06_Tecnologias/SSH.md",
     "06_Tecnologias",
     "Recursos",
     "Pasted image 20260919121139.png",
