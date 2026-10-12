@@ -15,6 +15,10 @@ wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
 
 Su objetivo es cumplir con el **principio de mínimo privilegio**: en lugar de darle a un programa o proceso acceso total como `root` solo para que haga una tarea específica, se le concede únicamente la *capability* exacta que necesita.
 
+```bash
+getcap -r /
+```
+
 ## Python Capability (`cap_setuid`)
 
 Si se muestra esto en la búsqueda de capabilities con python, sabes que puede ser vulnerable al cambiar el ID (ver caso práctico en [[Cap machine]]):
