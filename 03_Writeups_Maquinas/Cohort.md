@@ -64,8 +64,12 @@ dba083621ca5cf6d7ef0158b7e8111c9
 ## 4. Privilege Escalation (Escalada de Privilegios)
 
 ### Enumeración Interna
-- 
+-  No encontre nada e capabilities ni nada, solo una version vieja de packagekit 1.2.8 que es antigua
+```bash
+dpkg -l | grep packagekit
+```
 
+	
 ### Explotación Local
 1. 
 2. 

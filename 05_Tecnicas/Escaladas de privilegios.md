@@ -16,7 +16,7 @@ wget https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh
 Su objetivo es cumplir con el **principio de mínimo privilegio**: en lugar de darle a un programa o proceso acceso total como `root` solo para que haga una tarea específica, se le concede únicamente la *capability* exacta que necesita.
 
 ```bash
-getcap -r /
+getcap -r / 2>/dev/null
 ```
 
 ## Python Capability (`cap_setuid`)
