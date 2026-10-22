@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Comandos_y_Herramientas/Actualizar shell.md",
+                "file": "05_Tecnicas/Escaladas de privilegios.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -175,8 +175,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,8 +189,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a1a5835b8a59ef1f",
+  "active": "7b01634d09f091fa",
   "lastOpenFiles": [
+    "Cursitos_BIGSCHOOL",
     "01_Comandos_y_Herramientas/Shell comandos.md",
     "01_Comandos_y_Herramientas/Nmap.md",
     "01_Comandos_y_Herramientas/Linux comandos.md",
@@ -217,7 +217,6 @@
     "03_Writeups_Maquinas/Beach Bar.md",
     "03_Writeups_Maquinas/Reactor.md",
     "03_Writeups_Maquinas/Redeemer.md",
-    "Dashboard.md",
     "06_Tecnologias",
     "Recursos",
     "Pasted image 20260919121139.png",
