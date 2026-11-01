@@ -5,8 +5,8 @@ platform: Dockerlabs
 difficulty: Easy
 os: Linux
 tags:
-  - 
-status: ""
+  - SQLInyection
+status: Completada
 ---
 
 # Resumen Ejecutivo
