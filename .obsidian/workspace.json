@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dashboard.md",
+                "file": "03_Writeups_Maquinas/Basic Pentesting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dashboard"
+              "title": "Basic Pentesting"
             }
           }
         ]
@@ -192,6 +192,8 @@
   },
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
+    "Dashboard.md",
+    "03_Writeups_Maquinas/Basic Pentesting.md",
     "03_Writeups_Maquinas/Obsession.md",
     "03_Writeups_Maquinas/webbinarshop.md",
     "01_Comandos_y_Herramientas/Hydra.md",
@@ -217,8 +219,6 @@
     "06_Tecnologias/SSH.md",
     "06_Tecnologias/VHOST.md",
     "03_Writeups_Maquinas/Room 404.md",
-    "06_Tecnologias/YAML.md",
-    "03_Writeups_Maquinas/Beach Bar.md",
     "06_Tecnologias",
     "Recursos",
     "Pasted image 20260919121139.png",
