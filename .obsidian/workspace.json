@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Basic Pentesting.md",
+                "file": "03_Writeups_Maquinas/Redeemer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Pentesting"
+              "title": "Redeemer"
             }
           }
         ]
@@ -192,8 +192,9 @@
   },
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
-    "Dashboard.md",
     "03_Writeups_Maquinas/Basic Pentesting.md",
+    "06_Tecnologias/SMB.md",
+    "Dashboard.md",
     "03_Writeups_Maquinas/Obsession.md",
     "03_Writeups_Maquinas/webbinarshop.md",
     "01_Comandos_y_Herramientas/Hydra.md",
@@ -214,7 +215,6 @@
     "02_Vulnerabilidades/RCE.md",
     "02_Vulnerabilidades/IDOR.md",
     "06_Tecnologias/MARIMO.md",
-    "06_Tecnologias/SMB.md",
     "06_Tecnologias/SQLITE 3.md",
     "06_Tecnologias/SSH.md",
     "06_Tecnologias/VHOST.md",
