@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Basic Pentesting.md",
+                "file": "06_Tecnologias/SMB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Pentesting"
+              "title": "SMB"
             }
           }
         ]
@@ -192,8 +192,8 @@
   },
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
-    "03_Writeups_Maquinas/Redeemer.md",
     "03_Writeups_Maquinas/Basic Pentesting.md",
+    "03_Writeups_Maquinas/Redeemer.md",
     "06_Tecnologias/SMB.md",
     "Dashboard.md",
     "03_Writeups_Maquinas/Obsession.md",
