@@ -64,17 +64,17 @@ smbclient //IP/share -U 'DOMINIO/usuario%contraseña'
 
 Dentro del share:
 
-| Comando | Descripcion |
-| :--- | :--- |
-| `ls` | Listar archivos y carpetas |
-| `cd <carpeta>` | Cambiar de directorio remoto |
-| `pwd` | Ver la ruta actual |
-| `get <archivo>` | Descargar un archivo |
-| `put <archivo>` | Subir un archivo |
-| `recurse ON` | Activar recursion en `ls`/`mget` |
-| `prompt OFF` | No preguntar por cada archivo |
-| `mget *` | Descargar todo el contenido actual |
-| `exit` | Salir |
+| Comando         | Descripcion                        |
+| :-------------- | :--------------------------------- |
+| `ls`            | Listar archivos y carpetas         |
+| `cd <carpeta>`  | Cambiar de directorio remoto       |
+| `pwd`           | Ver la ruta actual                 |
+| `get <archivo>` | Descargar un archivo               |
+| `put <archivo>` | Subir un archivo                   |
+| `recurse ON`    | Activar recursion en `ls`/`mget`   |
+| `prompt OFF`    | No preguntar por cada archivo      |
+| `mget *`        | Descargar todo el contenido actual |
+| `exit`          | Salir                              |
 
 Descargar todo de una sola vez:
 
