@@ -47,6 +47,11 @@ Este comando nos sirve para poder ver cuales son los comandos que estan permitid
 sudo -u {usuario} {comando}
 ```
 
+## vim
+
+```bash
+sudo vim -c ':!/bin/sh'
+```
 ---
 
 # Binarios SUID

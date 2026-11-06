@@ -193,6 +193,7 @@
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
     "03_Writeups_Maquinas/Simple CTF.md",
+    "05_Tecnicas/Escaladas de privilegios.md",
     "01_Comandos_y_Herramientas/FFUF.md",
     "06_Tecnologias/FTP - SFTP.md",
     "03_Writeups_Maquinas/Obsession.md",
@@ -206,7 +207,6 @@
     "Dashboard.md",
     "03_Writeups_Maquinas/webbinarshop.md",
     "01_Comandos_y_Herramientas/Hydra.md",
-    "05_Tecnicas/Escaladas de privilegios.md",
     "Cursitos_BIGSCHOOL",
     "01_Comandos_y_Herramientas/Shell comandos.md",
     "01_Comandos_y_Herramientas/Nmap.md",

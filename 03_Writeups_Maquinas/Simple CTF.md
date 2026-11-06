@@ -60,11 +60,11 @@ john --format=dynamic_4 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 ### Metodología
 1.  Al intentar subir un archivo php, nos bloquea, entonces lo subimos como .phtm
 2. insertamos un payload para ejecutar comandos remotamente
-3. 
+3. Introcducimos como usuario www-data, pero este usuario no tiene permisos de casi nada
 
 ### Ejecución
 ```bash
-
+G00d j0b, keep up!
 ```
 
 **Prueba de acceso (User Flag):**
