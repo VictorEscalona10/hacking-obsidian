@@ -264,7 +264,7 @@ Nunca confiar solo en la salida de Hydra: probar el login y confirmar el acceso.
 | `ncrack` | Fuerza bruta de credenciales de red (Nmap suite) |
 | `patator` | Framework modular para ataques de autenticación |
 | `netexec` / `crackmapexec` | Validar y reutilizar credenciales en [[SMB]] |
-| `john` / `hashcat` | Crackeo **offline** de hashes (ver [[MD5]]) |
+| [[John the Ripper]] / `hashcat` | Crackeo **offline** de hashes (ver [[MD5]]) |
 | `wpscan` | Fuerza bruta específica de WordPress |
 | [[FFUF]] | Fuzzing de rutas y parámetros, no de credenciales |
 

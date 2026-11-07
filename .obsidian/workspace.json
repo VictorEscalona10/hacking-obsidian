@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "05_Tecnicas/Escaladas de privilegios.md",
-                "mode": "source",
+                "file": "01_Comandos_y_Herramientas/John the Ripper.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Escaladas de privilegios"
+              "title": "John the Ripper"
             }
           }
         ]
@@ -192,6 +192,8 @@
   },
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
+    "01_Comandos_y_Herramientas/git-dumper.md",
+    "01_Comandos_y_Herramientas/John the Ripper.md",
     "03_Writeups_Maquinas/Simple CTF.md",
     "05_Tecnicas/Escaladas de privilegios.md",
     "01_Comandos_y_Herramientas/FFUF.md",
@@ -211,14 +213,12 @@
     "01_Comandos_y_Herramientas/Shell comandos.md",
     "01_Comandos_y_Herramientas/Nmap.md",
     "01_Comandos_y_Herramientas/Linux comandos.md",
-    "01_Comandos_y_Herramientas/git-dumper.md",
     "01_Comandos_y_Herramientas/curl - get.md",
     "01_Comandos_y_Herramientas/Actualizar shell.md",
     "03_Writeups_Maquinas/Management.md",
     "03_Writeups_Maquinas/Cohort.md",
     "06_Tecnologias/NGINX.md",
     "03_Writeups_Maquinas/Cap machine.md",
-    "02_Vulnerabilidades/SSRF.md",
     "06_Tecnologias",
     "Recursos",
     "Pasted image 20260919121139.png",

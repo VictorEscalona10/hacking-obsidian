@@ -39,7 +39,7 @@ echo -n "password" | md5sum
 
 ## Crackear MD5
 
-**JTR (John the Ripper):**
+**[[John the Ripper|John the Ripper]] (JTR):**
 
 ```bash
 echo "5f4dcc3b5aa765d61d8327deb882cf99" > hash.txt
