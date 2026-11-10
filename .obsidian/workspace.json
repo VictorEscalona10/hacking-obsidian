@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Basic Pentesting.md",
+                "file": "05_Tecnicas/Reverse Shell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Basic Pentesting"
+              "title": "Reverse Shell"
             }
           },
           {
@@ -207,10 +207,12 @@
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
     "03_Writeups_Maquinas/Overpass.md",
-    "05_Tecnicas/Escaladas de privilegios.md",
-    "03_Writeups_Maquinas/Basic Pentesting.md",
-    "06_Tecnologias/SMB.md",
+    "03_Writeups_Maquinas/Pickle rick.md",
     "03_Writeups_Maquinas/Simple CTF.md",
+    "03_Writeups_Maquinas/Dreaming.md",
+    "03_Writeups_Maquinas/Basic Pentesting.md",
+    "05_Tecnicas/Escaladas de privilegios.md",
+    "06_Tecnologias/SMB.md",
     "Dashboard.md",
     "03_Writeups_Maquinas/Redeemer.md",
     "03_Writeups_Maquinas/RootMe.md",
@@ -219,7 +221,6 @@
     "03_Writeups_Maquinas/Cap machine.md",
     "06_Tecnologias/FTP - SFTP.md",
     "01_Comandos_y_Herramientas/John the Ripper.md",
-    "03_Writeups_Maquinas/Pickle rick.md",
     "01_Comandos_y_Herramientas/Hydra.md",
     "01_Comandos_y_Herramientas/FFUF.md",
     "03_Writeups_Maquinas/Bounty Hacker.md",
@@ -232,7 +233,6 @@
     "03_Writeups_Maquinas/webbinarshop.md",
     "Cursitos_BIGSCHOOL",
     "01_Comandos_y_Herramientas/Shell comandos.md",
-    "01_Comandos_y_Herramientas/Nmap.md",
     "06_Tecnologias",
     "Recursos",
     "Pasted image 20260919121139.png",

