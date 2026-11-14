@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Writeups_Maquinas/Blog.md",
+                "file": "06_Tecnologias/SMB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Blog"
+              "title": "SMB"
             }
           },
           {
@@ -206,8 +206,8 @@
   },
   "active": "a1a5835b8a59ef1f",
   "lastOpenFiles": [
-    "05_Tecnicas/Reverse Shell.md",
     "03_Writeups_Maquinas/Blog.md",
+    "05_Tecnicas/Reverse Shell.md",
     "03_Writeups_Maquinas/Overpass.md",
     "03_Writeups_Maquinas/Pickle rick.md",
     "03_Writeups_Maquinas/Simple CTF.md",
