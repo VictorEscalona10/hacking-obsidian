@@ -1,5 +1,6 @@
 {
   "enabledCssSnippets": [
     "enlaces"
-  ]
+  ],
+  "showRibbon": true
 }
